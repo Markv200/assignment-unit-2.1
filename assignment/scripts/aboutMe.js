@@ -9,7 +9,7 @@ console.log(  lastName  );
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = 'Mark Velesaca';
-console.log(  firstName+lastName  );
+console.log(  firstName + lastName  );
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 23;
@@ -23,7 +23,7 @@ let introduction = 'My name is ' + fullName + ' and I think ' +luckyNumber+ ' is
 console.log( introduction ); 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
-let adventurous = true; 
+let adventurous = false; 
 console.log( adventurous );
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
@@ -34,25 +34,40 @@ console.log( food );
 let pets = 1;
 console.log( pets );
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 3;
+let friendsPets = 2;
 console.log( friendsPets )
 // 10 - Add two pets to your `pets` variable
 pets+=2;
 console.log( pets );
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets = 3;
+const allowedPets = 5;
 console.log( allowedPets );
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-
+let result = 'How about we stay home?';
+if(adventurous ){
+  console.log('Adventures are Great!');
+}
+else{
+  console.log('How about we stay home?');
+}
+console.log( result );
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
+let diceRoll = 'Try again Later';
+if(luckyNumber === 2 && adventurous){
+  console.log( 'Roll the dice' );
+}
+else{
+  console.log( 'Try again Later' );
+}
 
+console.log( diceRoll )
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
@@ -61,6 +76,19 @@ console.log( allowedPets );
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+let petStatus = 'I can have more pets';
+if(pets < allowedPets){
+  console.log('I can have more pets');
+}
+else if (pets === allowedPets ){
+  console.log('I have enough pets');
+}
+else if ( pets > allowedPets ){
+  console.log('oh no, I have too many pets!');
+}
+console.log( petStatus );
+
+
 
 
 // STRETCH GOALS:

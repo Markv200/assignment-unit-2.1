@@ -76,15 +76,15 @@ console.log( diceRoll )
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = 'I can have more pets';
+let petStatus;
 if(pets < allowedPets){
-  console.log('I can have more pets');
+  petStatus = 'I can have more pets';
 }
 else if (pets === allowedPets ){
-  console.log('I have enough pets');
+  petStatus= 'I have enough pets';
 }
 else if ( pets > allowedPets ){
-  console.log('oh no, I have too many pets!');
+  petStatus='oh no, I have too many pets!';
 }
 console.log( petStatus );
 

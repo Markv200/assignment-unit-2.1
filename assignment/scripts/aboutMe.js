@@ -8,8 +8,8 @@ console.log(  lastName  );
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
-let fullName = 'Mark Velesaca';
-console.log(  firstName + lastName  );
+let fullName = firstName + lastName;
+console.log( fullName  );
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 23;
@@ -46,12 +46,12 @@ console.log( allowedPets );
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = 'How about we stay home?';
+let result;
 if(adventurous ){
-  console.log('Adventures are Great!');
+  result= 'Adventures are Great!';
 }
 else{
-  console.log('How about we stay home?');
+  result= 'How about we stay home?';
 }
 console.log( result );
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
@@ -59,15 +59,15 @@ console.log( result );
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceRoll = 'Try again Later';
+let diceRoll;
 if(luckyNumber === 2 && adventurous){
-  console.log( 'Roll the dice' );
+  diceRoll= 'Roll the dice';
 }
 else{
-  console.log( 'Try again Later' );
+  diceRoll= 'Try again Later';
 }
 
-console.log( diceRoll )
+console.log( diceRoll );
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
